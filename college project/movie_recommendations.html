@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: white;">Recommendation based on Series</title>
+    <link rel="stylesheet" href="C:\Users\70001\Downloads\college project\style.css">
+</head>
+<body style="background-color: dimgray;">
+    <div style="width: 800px;" class="container">
+        <h1>Recommendation Based On Series</h1>
+        <img style="margin-bottom: 1rem;" src="college.img" alt="">
+        <label for="">Search by Series :</label>
+        <input type="text" id="searchInput" placeholder="Search for a series...">
+        <div id="suggestions"></div> 
+        <label for="">No. of Recommendations :</label>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="25" value="50" class="slider" id="myRange">
+            <p style="color: white;">Value: <span id="demo"></span></p>
+        </div>
+        </div>
+        <button style="position: relative; left: 37rem; bottom: 6.8rem;" onclick="getMovieRecommendations()">Get Recommendations</button>
+        <div id="recommendations"></div>  
+
+    <script src="script.js"></script>
+    <script src="movie_recommendations.js"></script>
+</body>
+</html>

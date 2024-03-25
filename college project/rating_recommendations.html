@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating-based Movie Recommendations</title>
+    <link rel="stylesheet" href="C:\Users\70001\Downloads\college project\style.css">
+</head>
+<body style="background-color: dimgray;">
+    <div style="width: 700px;" class="container">
+        <h1>Recommendation Based On Rating</h1>
+        <img src="star_1.avif" alt="">
+        <label for="rating">Select rating range:</label>
+        <select id="rating">
+            <option value="0-5">0 - 5</option>
+            <option value="5-7">5 - 7</option>
+            <option value="7-10">7 - 10</option>
+        </select>
+        <label for="genre">Select genre:</label>
+        <select id="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="sci-fi">Sci-Fi</option>
+        </select>
+        <label for="">No. of Recommendations</label>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="25" value="50" class="slider" id="myRange">
+            <p style="color: white;">Value: <span id="demo"></span></p>
+          </div>
+
+        <button style="position: relative; left: 18rem; " onclick="getRatingRecommendations()">Get Recommendations</button>
+        <div id="recommendations"></div>
+    </div>
+   
+
+
+    <script src="script.js"></script>
+    <script src="rating_recommendations.js"></script>
+</body>
+</html>

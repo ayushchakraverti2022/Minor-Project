@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title style="color: white;">Recommendation based on Series</title>
-    <link rel="stylesheet" href="C:\Users\70001\Downloads\college project\style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: dimgray;">
     <div style="width: 800px;" class="container">
@@ -21,6 +21,17 @@
         </div>
         <button style="position: relative; left: 37rem; bottom: 6.8rem;" onclick="getMovieRecommendations()">Get Recommendations</button>
         <div id="recommendations"></div>  
+        <script>
+            function getSelectedGenre() {
+              // Get the select element
+              var selectElement = document.getElementById("genreSelect");
+              // Get the selected option
+              var selectedOption = selectElement.options[selectElement.selectedIndex];
+              // Get the value of the selected option
+              var selectedValue = selectedOption.value;
+              // Log the selected value to the console
+              console.log("Selected Genre: " + selectedValue);
+            }
 
     <script src="script.js"></script>
     <script src="movie_recommendations.js"></script>
